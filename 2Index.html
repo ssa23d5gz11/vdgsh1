@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>اتصل بنا</title>
+    <style>
+        /* إعدادات عامة */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* تحديد اتجاه الكتابة إلى اليمين للغة العربية */
+        }
+
+        /* شريط القائمة */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center; /* توسيط النصوص */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-left: 10px; /* تباعد بين العناصر في الشريط */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* محتوى الصفحة */
+        section {
+            padding: 20px;
+            text-align: center; /* توسيط النصوص */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        /* استمارة الاتصال */
+        form {
+            width: 50%;
+            margin: 0 auto; /* توسيط النموذج */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط القائمة -->
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="1.html"> تم تصميمه من قبل </a></li>
+            <li><a href="2.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- محتوى صفحة اتصل بنا -->
+    <section>
+        <h1>اتصل بنا</h1>
+        <form action="https://wa.me/966597118963" method="get" target="_blank">
+            <label for="first_name">الاسم الأول:</label>
+            <input type="text" id="first_name" name="text" required>
+
+            <label for="last_name">الاسم الثاني:</label>
+            <input type="text" id="last_name" name="text" required>
+
+            <label for="issue_subject">موضوع المشكلة:</label>
+            <textarea id="issue_subject" name="text" required></textarea>
+
+            <button type="submit">إرسال عبر الواتساب</button>
+        </form>
+    </section>
+
+</body>
+</html>

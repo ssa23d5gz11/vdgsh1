@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>مشروع الحاسب</title>
+    <style>
+        /* إعدادات عامة */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* تحديد اتجاه الكتابة إلى اليمين للغة العربية */
+            background-color: #f8f8f8;
+            color: #333; /* لون النص العام */
+        }
+
+        /* شريط القائمة */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center; /* توسيط النصوص */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block; /* عرض القائمة كمستطيل متوازن */
+        }
+
+        li {
+            display: inline;
+            margin-left: 10px; /* تباعد بين العناصر في الشريط */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: #555;
+            transition: background-color 0.3s; /* تأثير تدرج اللون عند التحويل */
+        }
+
+        a:hover {
+            background-color: #777;
+        }
+
+        /* محتوى الصفحة */
+        section {
+            padding: 20px;
+            text-align: center; /* توسيط النصوص */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #555; /* لون العنوان الثانوي */
+        }
+
+        p {
+            color: #777; /* لون النص الفاتح */
+        }
+
+        /* قائمة الأعضاء */
+        #membersList {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0; /* هامش أعلى وأسفل للقائمة */
+        }
+
+        #membersList li {
+            margin-bottom: 10px; /* تباعد بين العناصر في القائمة */
+        }
+
+        #membersList a {
+            display: block;
+            padding: 10px;
+            background-color: #ddd; /* لون خلفية الرابط في القائمة */
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #membersList a:hover {
+            background-color: #ccc; /* لون الخلفية عند التحويل */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- شريط القائمة -->
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="1Index.html">تم تصميمه من قبل</a></li>
+            <li><a href="2Index.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- محتوى الصفحة الرئيسية -->
+    <section>
+        <h1>مشروع الحاسب - برمجة موقع كامل</h1>
+        <h2>مالك المشروع:  سامر الشهري: تمت تصميم الموقع من قبل سامر وتم استضافة الموقع </h2>
+        <h2>مشرف المشروع: حسام السلمي : تم اعطاء جميع التصاميم والوان الموقع الى مالك المشروع</h2>
+        
+        <!-- قائمة الأعضاء -->
+        <ul id="membersList">
+            <li><a href="5Index.html">مشعل السلمي</a></li>
+            <li><a href="3Index.html">مازن الفزي</a></li>
+            <li><a href="4Index.html">مجاهد السواط</a></li>
+        </ul>
+    </section>
+
+    <!-- إضافة تأثيرات JavaScript -->
+    <script>
+        // كود JavaScript هنا (يمكنك تعيين تأثيرات أنيقة حسب احتياجاتك)
+        // مثال: تأثير تظليل النص عند تحويل المؤشر
+        var membersList = document.getElementById('membersList');
+        var listItems = membersList.getElementsByTagName('li');
+
+        for (var i = 0; i < listItems.length; i++) {
+            listItems[i].addEventListener('mouseover', function() {
+                this.style.textShadow = '2px 2px 5px #888888';
+            });
+
+            listItems[i].addEventListener('mouseout', function() {
+                this.style.textShadow = 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
